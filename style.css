@@ -1,78 +1,71 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
 }
 
-body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #667eea, #764ba2);
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#1f4037,#99f2c8);
 }
 
-.calculator {
-    width: 340px;
-    background: #1e1e2f;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0px 10px 30px rgba(0,0,0,0.4);
+.calculator{
+    width:420px;
+    background:#222;
+    padding:20px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.4);
 }
 
-#display {
-    width: 100%;
-    height: 70px;
-    border: none;
-    outline: none;
-    text-align: right;
-    font-size: 2rem;
-    padding: 10px;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    background: #2d2d44;
-    color: white;
+#display{
+    width:100%;
+    height:70px;
+    border:none;
+    outline:none;
+    border-radius:10px;
+    margin-bottom:15px;
+    padding:10px;
+    text-align:right;
+    font-size:28px;
+    background:#333;
+    color:white;
 }
 
-.buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+.buttons{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:10px;
 }
 
-button {
-    height: 65px;
-    border: none;
-    border-radius: 12px;
-    font-size: 1.4rem;
-    cursor: pointer;
-    background: #35354d;
-    color: white;
-    transition: 0.3s;
+button{
+    height:60px;
+    border:none;
+    border-radius:10px;
+    background:#444;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.3s;
 }
 
-button:hover {
-    background: #4c4c6d;
-    transform: scale(1.05);
+button:hover{
+    background:#666;
 }
 
-.operator {
-    background: #ff9500;
+.wide{
+    background:#ff9800;
 }
 
-.operator:hover {
-    background: #e68900;
+.equal{
+    grid-column:span 4;
+    background:#28a745;
+    font-size:24px;
 }
 
-.equal {
-    background: #28a745;
-}
-
-.equal:hover {
-    background: #218838;
-}
-
-.zero {
-    grid-column: span 2;
+.equal:hover{
+    background:#218838;
 }
